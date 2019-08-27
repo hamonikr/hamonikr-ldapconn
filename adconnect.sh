@@ -51,14 +51,9 @@ then
 		echo "50" | dialog --gauge "Please wait" 10 70 0
 		sleep 1
 
-        sudo sed -i "$ a\nameserver search $c \n nameserver $d" /etc/resolv.conf
-#        sudo sed -i "$ a\nameserver $d" /etc/resolvconf/resolv.conf.d/head
+        
         sudo echo "nameserver $d" | sudo tee -a /etc/resolvconf/resolv.conf.d/head
-
-	sudo rm /etc/resolv.conf
-	sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf
 	sudo systemctl restart resolvconf
-
 	sudo service resolvconf restart
 
         domainCut=`echo "$c" | cut -d'.' -f1`
