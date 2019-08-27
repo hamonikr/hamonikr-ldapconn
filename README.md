@@ -4,3 +4,4 @@
 
 # ldapconn build debian package 
 * 데비안 페키지 파일로 만들어 배포.
+* todo : 내부 서버 개발 및 테스트 후 github 배포
