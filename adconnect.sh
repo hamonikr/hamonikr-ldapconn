@@ -39,17 +39,13 @@ then
                 sudo apt install resolvconf -y 1>output.log 2>error.log
         }
 
-#        dpkg -l | grep libglade2-0  >/dev/null 2>&1 || {
-#                sudo apt-get install libglade2-0 -y 1>output.log 2>error.log
-#        }
         dpkg -l | grep pbis  >/dev/null 2>&1 || {
-
                 wget https://github.com/BeyondTrust/pbis-open/releases/download/8.5.2/pbis-open-8.5.2.265.linux.x86_64.deb.sh 1>output.log 2>error.log
                 sudo chmod +x pbis-open-8.5.2.265.linux.x86_64.deb.sh 1>output.log 2>error.log
                 yes | sudo sh pbis-open-8.5.2.265.linux.x86_64.deb.sh 1>output.log 2>error.log
         }
 		echo "50" | dialog --gauge "Please wait" 10 70 0
-		sleep 1
+	
 
         
         sudo echo "nameserver $d" | sudo tee -a /etc/resolvconf/resolv.conf.d/head
