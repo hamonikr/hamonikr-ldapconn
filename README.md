@@ -1,3 +1,6 @@
 # AD client
-* ÇØ´ç adclient.sh ÄÚµå´Â ÇÏ¸ğ´ÏÄ« OS ¿¡¼­ AD Connection ¼³Á¤ ¹× ¿¬°áÀ» µµ¿ÍÁÖ´Â Client script ÀÔ´Ï´Ù.
-* ÇØ´ç ¼Ò½ºÄÚµå´Â pbis-open À» »ç¿ëÇÕ´Ï´Ù. (https://repo.pbis.beyondtrust.com/apt.html)
+* í•´ë‹¹ adclient.sh ì½”ë“œëŠ” í•˜ëª¨ë‹ˆì¹´ OS ì—ì„œ AD Connection ì„¤ì • ë° ì—°ê²°ì„ ë„ì™€ì£¼ëŠ” Client script ì…ë‹ˆë‹¤.
+* í•´ë‹¹ ì†ŒìŠ¤ì½”ë“œëŠ” pbis-open ì„ ì‚¬ìš©í•©ë‹ˆë‹¤. (https://repo.pbis.beyondtrust.com/apt.html)
+
+# ldapconn build debian package 
+* ë°ë¹„ì•ˆ í˜í‚¤ì§€ íŒŒì¼ë¡œ ë§Œë“¤ì–´ ë°°í¬.
